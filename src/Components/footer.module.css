@@ -1,0 +1,38 @@
+.footerlayout {
+  background-color: var(--footerBg);
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mediabtn {
+  background-color: var(--mediaBtnBg);
+  width: 3rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 3rem;
+  transition: all 400ms;
+}
+.medialist {
+  display: flex;
+}
+.btn {
+  font-size: 2rem;
+}
+.mediabtn:hover {
+  background-color: white;
+}
+.mediabtn:hover .btn {
+  color: var(--mediaBtnBg);
+}
+.copyright {
+  color: grey;
+}
+.copyright span {
+  color: pink;
+}

@@ -1,0 +1,100 @@
+.textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  font-size: 3rem;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.profilepic img {
+  border-radius: 50%;
+  height: 13rem;
+  width: 13rem;
+
+  object-fit: cover;
+}
+.profilepic {
+  margin-bottom: 2rem;
+}
+.workbtn {
+  color: white;
+  background-color: transparent;
+  border: 2px solid var(--introButtonBorder);
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  transition: 0.3s all;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.workbtn:hover {
+  background-color: var(--introButtonBgHover);
+  color: var(--introButtonTitleHover);
+}
+.workbtn:hover > .arrow {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+.arrow {
+  transition: 0.3s all;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.name span {
+  color: var(--introSecondaryTitle);
+}
+.navbar_bg {
+  background-color: var(--navBg);
+  border-bottom: 3px solid var(--navBorder);
+  position: sticky;
+  transition: 0.25s;
+  z-index: 100;
+  height: 4rem;
+  top: 0;
+}
+.navbar {
+  display: flex;
+  /* align-items: center; */
+  /* top: 3; */
+}
+
+.navbar div {
+  color: var(--navTitle);
+  height: 4rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.navbar div:hover {
+  background-color: var(--navTitleBgHover);
+  color: var(--navTitleHover);
+}
+
+/* .navbar-nav {
+  background-color: red;
+} */
+
+@media (max-width: 690px) {
+  .name {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 410px) {
+  .name {
+    font-size: 1.5rem;
+  }
+}

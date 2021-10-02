@@ -1,0 +1,66 @@
+.shape {
+  background-color: var(--contactBg);
+  vertical-align: top;
+}
+.title {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.title div:first-child {
+  font-size: 2.4rem;
+  color: white;
+
+  padding-bottom: 0.4rem;
+}
+.bottomborder {
+  width: 5rem;
+  height: 5px;
+  background-color: white;
+}
+.layout {
+  background-color: var(--contactBg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.sectionht {
+  height: 100vh;
+}
+.formlayout {
+  position: relative;
+  width: 90%;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  background-color: var(--footerBg);
+  border-radius: 5px;
+  padding: 1rem;
+  border: none;
+  margin: 0.5rem 0;
+  color: white;
+  outline: none;
+}
+.formlayout textarea {
+  resize: none;
+}
+
+.formlayout button {
+  position: absolute;
+  bottom: -60px;
+  right: 0;
+  width: 6rem;
+  font-size: 1rem;
+
+  background-color: transparent;
+  color: white;
+  padding: 1rem;
+  border: 1px solid white;
+}
