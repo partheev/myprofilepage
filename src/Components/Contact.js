@@ -3,7 +3,7 @@ import styles from './contact.module.css'
 const Contact = () => {
   const ContactForm = () => {
     return (
-      <div className={styles.formlayout}>
+      <div data-aos='zoom-in-up' className={styles.formlayout}>
         <input placeholder='Name' className={styles.form}></input>
         <input placeholder='Email' className={styles.form}></input>
         <textarea
@@ -16,7 +16,7 @@ const Contact = () => {
     )
   }
   return (
-    <div className={styles.sectionht}>
+    <div id='contact' className={styles.sectionht}>
       <svg
         preserveAspectRatio='none'
         viewBox='0 0 100 102'
@@ -30,10 +30,10 @@ const Contact = () => {
       </svg>
       <div className={styles.layout}>
         <div className={styles.title}>
-          <div data-aos='flip-up'>CONTACT</div>
+          <div data-aos='fade-left'>CONTACT</div>
           <div
-            data-aos='fade'
-            data-aos-duration='1000'
+            data-aos='fade-left'
+            data-aos-delay='300'
             className={styles.bottomborder}
           ></div>
         </div>

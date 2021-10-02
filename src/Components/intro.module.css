@@ -83,6 +83,9 @@
   background-color: var(--navTitleBgHover);
   color: var(--navTitleHover);
 }
+.navbar a {
+  text-decoration: none;
+}
 
 /* .navbar-nav {
   background-color: red;

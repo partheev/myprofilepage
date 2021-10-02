@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from './intro.module.css'
-// import image from 'images/partheev.jpg'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 const Intro = (props) => {
   return (
-    <div>
+    <div id='home'>
       <canvas id='canvas'></canvas>
       <div className={styles.title}>
         <div className={styles.textbox}>
