@@ -1,23 +1,84 @@
 .title {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: var(--sectionTitle);
-  padding: 6rem 0 2rem 0;
+    /* width: 50%; */
+    display: flex;
+
+    flex-direction: column;
+    color: var(--sectionTitle);
+    /* padding: 6rem 0 2rem 0; */
 }
-.title span {
-  font-size: 2rem;
-  padding-bottom: 0.4rem;
+.titlebig {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 0.4rem;
+}
+.titlesm {
+    font-size: 1rem;
 }
 .bottomborder {
-  width: 4rem;
-  height: 3px;
-  background-color: var(--sectionTitle);
+    width: 4rem;
+    height: 3px;
+    background-color: var(--sectionTitle);
 }
 
 .about {
-  background-color: #ffffff;
-  scroll-snap-align: start;
+    background-color: #ffffff;
+    scroll-snap-align: start;
+    margin-top: 5rem;
+}
+
+.layout {
+    display: flex;
+    margin: 0 1rem;
+}
+.layout > div {
+    margin: 1rem;
+    width: 100%;
+}
+.aboutdetails {
+    padding: 1rem;
+}
+
+.aboutpara {
+    font-weight: 200;
+}
+.cvbtn {
+    /* display: flex;
+    justify-content: center; */
+    text-decoration: none;
+    /* display: block; */
+}
+.cvbtn button {
+    cursor: pointer;
+    font-weight: 500;
+    border: 2px solid gray;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
+.cvbtn button:hover {
+    background-color: gray;
+    color: white;
+}
+.card {
+    padding: 1rem 0;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 10rem; */
+    /* overflow: hidden; */
+}
+.card img {
+    width: 30%;
+    margin-right: 1rem;
+    object-fit: contain;
+}
+.card h2 {
+    margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .layout {
+        flex-direction: column-reverse;
+    }
 }

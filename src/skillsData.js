@@ -4,31 +4,31 @@ export const skillsData = [
         techStack: [
             {
                 title: 'HTML5',
-                image: 'images/skillsData/html.png',
+                image: require('./images/skillsData/html.png').default,
             },
             {
                 title: 'CSS3',
-                image: 'images/skillsData/css.png',
+                image: require('./images/skillsData/css.png').default,
             },
             {
                 title: 'Bootstrap',
-                image: 'images/skillsData/bootstrap.png',
+                image: require('./images/skillsData/bootstrap.png').default,
             },
             {
                 title: 'Material UI',
-                image: 'images/skillsData/material-ui.png',
+                image: require('./images/skillsData/material-ui.png').default,
             },
             {
                 title: 'JavaScript',
-                image: 'images/skillsData/javascript.png',
+                image: require('./images/skillsData/javascript.png').default,
             },
             {
                 title: 'ReactJS',
-                image: 'images/skillsData/react.png',
+                image: require('./images/skillsData/react.png').default,
             },
             {
                 title: 'NEXTJS (SSR)',
-                image: 'images/skillsData/nextjs.png',
+                image: require('./images/skillsData/nextjs.png').default,
             },
         ],
     },
@@ -37,23 +37,23 @@ export const skillsData = [
         techStack: [
             {
                 title: 'Node.js',
-                image: 'images/skillsData/nodejs.png',
+                image: require('./images/skillsData/nodejs.png').default,
             },
             {
                 title: 'Express.js',
-                image: 'images/skillsData/expressjs.png',
+                image: require('./images/skillsData/expressjs.png').default,
             },
             {
                 title: 'Mongoose',
-                image: 'images/skillsData/mongoose.png',
+                image: require('./images/skillsData/mongoose.png').default,
             },
             // {
             //   title: 'Sequalize.js',
-            //   image: 'images/skillsData/sequalize.png',
+            //   image: require( ../images/skillsData/sequalize.png').default,
             // },
             // {
             //   title: 'FastAPI',
-            //   image: 'images/skillsData/fastapi.png',
+            //   image: require( ../images/skillsData/fastapi.png').default,
             // },
         ],
     },
@@ -62,15 +62,15 @@ export const skillsData = [
     //   techStack: [
     //     {
     //       title: 'Dart',
-    //       image: 'images/skillsData/dart.png',
+    //       image: require( ../images/skillsData/dart.png').default,
     //     },
     //     {
     //       title: 'Flutter',
-    //       image: 'images/skillsData/flutter.png',
+    //       image: require( ../images/skillsData/flutter.png').default,
     //     },
     //     {
     //       title: 'Bloc (Dart lib.)',
-    //       image: 'images/skillsData/bloc.png',
+    //       image: require( ../images/skillsData/bloc.png').default,
     //     },
     //   ],
     // },
@@ -79,31 +79,31 @@ export const skillsData = [
         techStack: [
             {
                 title: 'Git',
-                image: 'images/skillsData/git.png',
+                image: require('./images/skillsData/git.png').default,
             },
             {
                 title: 'Linux OS',
-                image: 'images/skillsData/linux.png',
+                image: require('./images/skillsData/linux.png').default,
             },
             {
                 title: 'Docker',
-                image: 'images/skillsData/docker.png',
+                image: require('./images/skillsData/docker.png').default,
             },
             // {
             //   title: 'Docker Swarm',
-            //   image: 'images/skillsData/dockerswarm.png',
+            //   image: require( ../images/skillsData/dockerswarm.png').default,
             // },
             // {
             //   title: 'Kubernetes',
-            //   image: 'images/skillsData/kubernetes.png',
+            //   image: require( ../images/skillsData/kubernetes.png').default,
             // },
             {
                 title: 'Amazon Web Services',
-                image: 'images/skillsData/aws.png',
+                image: require('./images/skillsData/aws.png').default,
             },
             // {
             //   title: 'Google Cloud',
-            //   image: 'images/skillsData/gcp.png',
+            //   image: require( ../images/skillsData/gcp.png').default,
             // },
         ],
     },
@@ -112,11 +112,11 @@ export const skillsData = [
         techStack: [
             {
                 title: 'MongoDB',
-                image: 'images/skillsData/mongodb.png',
+                image: require('./images/skillsData/mongodb.png').default,
             },
             // {
             //   title: 'MySql',
-            //   image: 'images/skillsData/mysql.svg',
+            //   image: require( ./images/skillsData/mysql.svg',
             // },
         ],
     },
@@ -125,7 +125,7 @@ export const skillsData = [
     //       techStack:[
     //           {
     //               title:'',
-    //               image:''
+    //               image: require('
     //           }
     //       ]
     // }

@@ -5,7 +5,7 @@ import { skillsData } from '../skillsData'
 const Skills = () => {
     let key = 1
     return (
-        <>
+        <div>
             <nav className={styles.nav}>
                 <div className='container'>Skills</div>
             </nav>
@@ -56,7 +56,7 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

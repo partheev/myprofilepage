@@ -1,67 +1,77 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+* {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+html,
+body {
+    overflow-x: hidden;
 }
 
 :root {
-  /* INTRO */
-  --introPrimaryTitle: white;
-  --introSecondaryTitle: rgb(255, 149, 167);
-  --introButtonTitleHover: purple;
-  --introButtonBgHover: white;
-  --introButtonBorder: rgb(255, 149, 167);
-  --skillsTag: rgb(255, 133, 229);
-  /* NAVBAR */
-  --navBg: rgb(99, 99, 99);
-  --navTitle: white;
-  --navTitleBgHover: rgb(197, 197, 197);
-  --navTitleHover: rgb(99, 99, 99);
-  --navBorder: rgb(34, 123, 255);
-  /* SECTION */
-  --sectionTitle: #45474a;
-  --contactBg: #252934;
-  --footerBg: #1b242f;
-  --footerbackbtn: #fb1f79;
-  --mediaBtnBg: #262f38;
-  --secondaryHighlight: #fb1f79;
+    /* INTRO */
+    --introPrimaryTitle: white;
+    --introSecondaryTitle: rgb(255, 149, 167);
+    --introButtonTitleHover: purple;
+    --introButtonBgHover: white;
+    --introButtonBorder: rgb(255, 149, 167);
+    --skillsTag: rgb(255, 133, 229);
+    /* NAVBAR */
+    --navBg: rgb(99, 99, 99);
+    --navTitle: white;
+    --navTitleBgHover: rgb(197, 197, 197);
+    --navTitleHover: rgb(99, 99, 99);
+    --navBorder: rgb(34, 123, 255);
+    /* SECTION */
+    --sectionTitle: #45474a;
+    --contactBg: #252934;
+    --footerBg: #1b242f;
+    --footerbackbtn: #fb1f79;
+    --mediaBtnBg: #262f38;
+    --secondaryHighlight: #fb1f79;
 }
 
 #canvas {
-  background-color: #2c343f;
-  width: 100%;
-  height: 100vh;
-  vertical-align: bottom;
+    background-color: #2c343f;
+    width: 100%;
+    height: 100vh;
+    vertical-align: bottom;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
 }
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
+    .container {
+        width: 750px;
+    }
 }
 @media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
+    .container {
+        width: 970px;
+    }
 }
 @media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
+    .container {
+        width: 1170px;
+    }
 }
