@@ -3,6 +3,7 @@ import styles from './footer.module.css'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import YouTubeIcon from '@mui/icons-material/YouTube'
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow'
 const list = [
   {
     name: 'Linkedin',
@@ -21,8 +22,15 @@ const list = [
   },
 ]
 const Footer = () => {
+  function topFunction() {
+    document.body.scrollTop = 0 // For Safari
+    document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+  }
   return (
     <div className={styles.footerlayout}>
+      <div onClick={topFunction} className={styles.backtotop}>
+        <DoubleArrowIcon />
+      </div>
       <div className={styles.medialist}>
         {list.map((e) => {
           return (

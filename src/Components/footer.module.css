@@ -34,5 +34,25 @@
   color: grey;
 }
 .copyright span {
-  color: pink;
+  color: var(--secondaryHighlight);
+}
+
+.backtotop {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -3rem;
+  background-color: white;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+.backtotop:hover {
+  background-color: var(--footerbackbtn);
+  color: white;
 }

@@ -28,7 +28,9 @@ body {
   --sectionTitle: #45474a;
   --contactBg: #252934;
   --footerBg: #1b242f;
+  --footerbackbtn: #fb1f79;
   --mediaBtnBg: #262f38;
+  --secondaryHighlight: #fb1f79;
 }
 
 #canvas {

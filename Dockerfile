@@ -2,13 +2,9 @@ from node:16-alpine
 
 WORKDIR /app
 
-COPY package.json .
+COPY build .
 
-RUN npm install
 
-COPY . .
-
-RUN npm run build
 RUN npm i serve -g
 EXPOSE 3000
 
