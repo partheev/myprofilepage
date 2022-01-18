@@ -1,58 +1,59 @@
 .footerlayout {
-  background-color: var(--footerBg);
-  height: 13rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    background-color: var(--footerBg);
+    height: 13rem;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .mediabtn {
-  background-color: var(--mediaBtnBg);
-  width: 3rem;
-  margin: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: white;
-  height: 3rem;
-  transition: all 400ms;
+    background-color: var(--mediaBtnBg);
+    width: 3rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    height: 3rem;
+    transition: all 400ms;
 }
 .medialist {
-  display: flex;
+    display: flex;
 }
 .btn {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 .mediabtn:hover {
-  background-color: white;
+    background-color: white;
 }
 .mediabtn:hover .btn {
-  color: var(--mediaBtnBg);
+    color: var(--mediaBtnBg);
 }
 .copyright {
-  color: grey;
+    color: grey;
 }
 .copyright span {
-  color: var(--secondaryHighlight);
+    color: var(--secondaryHighlight);
 }
 
 .backtotop {
-  padding: 15px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -3rem;
-  background-color: white;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  cursor: pointer;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -3rem;
+    background-color: white;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    cursor: pointer;
 }
 .backtotop:hover {
-  background-color: var(--footerbackbtn);
-  color: white;
+    background-color: var(--footerbackbtn);
+    color: white;
 }

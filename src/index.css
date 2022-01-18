@@ -49,6 +49,9 @@ body {
     height: 100vh;
     vertical-align: bottom;
 }
+* {
+    /* outline: 1px solid red; */
+}
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

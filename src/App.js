@@ -13,14 +13,14 @@ function App() {
         Aos.init({ once: true, duration: 1000 })
     })
     return (
-        <>
+        <div className='app'>
             <Intro />
             <Navbar />
             <About />
             <Skills />
             <Contact />
             <Footer />
-        </>
+        </div>
     )
 }
 

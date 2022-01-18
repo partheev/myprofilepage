@@ -11,8 +11,8 @@ export const skillsData = [
                 image: require('./images/skillsData/css.png').default,
             },
             {
-                title: 'Bootstrap',
-                image: require('./images/skillsData/bootstrap.png').default,
+                title: 'Tailwind CSS',
+                image: require('./images/skillsData/tailwind.png').default,
             },
             {
                 title: 'Material UI',
@@ -40,6 +40,14 @@ export const skillsData = [
                 image: require('./images/skillsData/nodejs.png').default,
             },
             {
+                title: 'Golang',
+                image: require('./images/skillsData/golang.png').default,
+            },
+            {
+                title: 'TypeScript',
+                image: require('./images/skillsData/typescript.png').default,
+            },
+            {
                 title: 'Express.js',
                 image: require('./images/skillsData/expressjs.png').default,
             },
@@ -47,10 +55,6 @@ export const skillsData = [
                 title: 'Mongoose',
                 image: require('./images/skillsData/mongoose.png').default,
             },
-            // {
-            //   title: 'Sequalize.js',
-            //   image: require( ../images/skillsData/sequalize.png').default,
-            // },
             // {
             //   title: 'FastAPI',
             //   image: require( ../images/skillsData/fastapi.png').default,
@@ -114,10 +118,10 @@ export const skillsData = [
                 title: 'MongoDB',
                 image: require('./images/skillsData/mongodb.png').default,
             },
-            // {
-            //   title: 'MySql',
-            //   image: require( ./images/skillsData/mysql.svg',
-            // },
+            {
+                title: 'Postgresql',
+                image: require('./images/skillsData/postgres.png').default,
+            },
         ],
     },
     //   {

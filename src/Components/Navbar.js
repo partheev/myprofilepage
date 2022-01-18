@@ -12,7 +12,7 @@ const Navbar = (props) => {
         },
         {
             name: 'Portfolio',
-            href: '#Portfolio',
+            href: '#portfolio',
         },
         {
             name: 'Contact',

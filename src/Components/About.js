@@ -5,22 +5,22 @@ const About = () => {
     const Cards = () => {
         const cardDetails = [
             {
-                title: 'Education',
-                image: require('../images/card/education.png').default,
-                message:
-                    'Begin your self-introduction with an overview of your career, starting with the present. For example, you might say, ',
-            },
-            {
                 title: 'My Expertise',
                 image: require('../images/card/experience.png').default,
                 message:
-                    'Begin your self-introduction with an overview of your career, starting with the present. For example, you might say, ',
+                    'I can build frontend and backend application for large scale enterprises. Design and Performance of the app are my first priorities.',
+            },
+            {
+                title: 'Education',
+                image: require('../images/card/education.png').default,
+                message:
+                    'I am currently pursuing my B.Tech 2nd in Computer Science and Technology from G.Pulla Reddy Enginnering College.',
             },
         ]
         const Card = ({ heading, message, image }) => {
             return (
                 <div className={styles.card}>
-                    <img src={image} />
+                    <img src={image} alt={heading} />
                     <div>
                         <h2>{heading}</h2>
                         <p>{message}</p>
@@ -32,7 +32,7 @@ const About = () => {
             <div>
                 {cardDetails.map((e) => {
                     return (
-                        <div data-aos='flip-down'>
+                        <div key={e.title} data-aos='flip-down'>
                             <Paper elevation={3}>
                                 <Card
                                     heading={e.title}
@@ -63,12 +63,10 @@ const About = () => {
                 </div>
                 <div className={styles.aboutpara}>
                     <p>
-                        Begin your self-introduction with an overview of your
-                        career, starting with the present. For example, you
-                        might say, “I'm an experienced software engineer” to
-                        clarify your current level and role. Continue the
-                        overview with a brief mention of how long you've worked
-                        in the field and what kind of work you do.
+                        I'm enthusiastic software developer. My passion towards
+                        computer science made me full stack web developer.
+                        Tasting latest technologies and improving knowledge on
+                        various domains in IT are my hobbies.{' '}
                     </p>
                 </div>
                 <a
