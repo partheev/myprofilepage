@@ -1,12 +1,12 @@
 import About from './Components/About'
 import Intro from './Components/Intro'
 import Navbar from './Components/Navbar'
-import Skills from './Components/Skills'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from 'react'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import Portfolio from './Components/Portfolio'
 
 function App() {
     useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
             <Intro />
             <Navbar />
             <About />
-            <Skills />
+            <Portfolio />
             <Contact />
             <Footer />
         </div>

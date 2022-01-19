@@ -21,7 +21,7 @@ const Navbar = (props) => {
     ]
     // return <div></div>
     return (
-        <div className={styles.navbar_bg}>
+        <div id='navbar' className={styles.navbar_bg}>
             <div className={`container ${styles.navbar}`}>
                 {routes.map((e) => {
                     return (

@@ -4,31 +4,36 @@ export const skillsData = [
         techStack: [
             {
                 title: 'HTML5',
-                image: require('./images/skillsData/html.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/html.png',
             },
             {
                 title: 'CSS3',
-                image: require('./images/skillsData/css.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/css.png',
             },
             {
                 title: 'Tailwind CSS',
-                image: require('./images/skillsData/tailwind.png').default,
+                image:
+                    process.env.PUBLIC_URL + '/images/skillsData/tailwind.png',
             },
             {
                 title: 'Material UI',
-                image: require('./images/skillsData/material-ui.png').default,
+                image:
+                    process.env.PUBLIC_URL +
+                    '/images/skillsData/material-ui.png',
             },
             {
                 title: 'JavaScript',
-                image: require('./images/skillsData/javascript.png').default,
+                image:
+                    process.env.PUBLIC_URL +
+                    '/images/skillsData/javascript.png',
             },
             {
                 title: 'ReactJS',
-                image: require('./images/skillsData/react.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/react.png',
             },
             {
                 title: 'NEXTJS (SSR)',
-                image: require('./images/skillsData/nextjs.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/nextjs.png',
             },
         ],
     },
@@ -37,27 +42,31 @@ export const skillsData = [
         techStack: [
             {
                 title: 'Node.js',
-                image: require('./images/skillsData/nodejs.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/nodejs.png',
             },
             {
                 title: 'Golang',
-                image: require('./images/skillsData/golang.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/golang.png',
             },
             {
                 title: 'TypeScript',
-                image: require('./images/skillsData/typescript.png').default,
+                image:
+                    process.env.PUBLIC_URL +
+                    '/images/skillsData/typescript.png',
             },
             {
                 title: 'Express.js',
-                image: require('./images/skillsData/expressjs.png').default,
+                image:
+                    process.env.PUBLIC_URL + '/images/skillsData/expressjs.png',
             },
             {
                 title: 'Mongoose',
-                image: require('./images/skillsData/mongoose.png').default,
+                image:
+                    process.env.PUBLIC_URL + '/images/skillsData/mongoose.png',
             },
             // {
             //   title: 'FastAPI',
-            //   image: require( ../images/skillsData/fastapi.png').default,
+            //   image:  ../images/skillsData/fastapi.png',
             // },
         ],
     },
@@ -66,15 +75,15 @@ export const skillsData = [
     //   techStack: [
     //     {
     //       title: 'Dart',
-    //       image: require( ../images/skillsData/dart.png').default,
+    //       image:  ../images/skillsData/dart.png',
     //     },
     //     {
     //       title: 'Flutter',
-    //       image: require( ../images/skillsData/flutter.png').default,
+    //       image:  ../images/skillsData/flutter.png',
     //     },
     //     {
     //       title: 'Bloc (Dart lib.)',
-    //       image: require( ../images/skillsData/bloc.png').default,
+    //       image:  ../images/skillsData/bloc.png',
     //     },
     //   ],
     // },
@@ -83,31 +92,31 @@ export const skillsData = [
         techStack: [
             {
                 title: 'Git',
-                image: require('./images/skillsData/git.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/git.png',
             },
             {
                 title: 'Linux OS',
-                image: require('./images/skillsData/linux.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/linux.png',
             },
             {
                 title: 'Docker',
-                image: require('./images/skillsData/docker.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/docker.png',
             },
             // {
             //   title: 'Docker Swarm',
-            //   image: require( ../images/skillsData/dockerswarm.png').default,
+            //   image:  ../images/skillsData/dockerswarm.png',
             // },
             // {
             //   title: 'Kubernetes',
-            //   image: require( ../images/skillsData/kubernetes.png').default,
+            //   image:  ../images/skillsData/kubernetes.png',
             // },
             {
                 title: 'Amazon Web Services',
-                image: require('./images/skillsData/aws.png').default,
+                image: process.env.PUBLIC_URL + '/images/skillsData/aws.png',
             },
             // {
             //   title: 'Google Cloud',
-            //   image: require( ../images/skillsData/gcp.png').default,
+            //   image:  ../images/skillsData/gcp.png',
             // },
         ],
     },
@@ -116,11 +125,13 @@ export const skillsData = [
         techStack: [
             {
                 title: 'MongoDB',
-                image: require('./images/skillsData/mongodb.png').default,
+                image:
+                    process.env.PUBLIC_URL + '/images/skillsData/mongodb.png',
             },
             {
                 title: 'Postgresql',
-                image: require('./images/skillsData/postgres.png').default,
+                image:
+                    process.env.PUBLIC_URL + '/images/skillsData/postgres.png',
             },
         ],
     },
@@ -129,7 +140,7 @@ export const skillsData = [
     //       techStack:[
     //           {
     //               title:'',
-    //               image: require('
+    //               image: '
     //           }
     //       ]
     // }

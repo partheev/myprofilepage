@@ -10,7 +10,10 @@ const Intro = (props) => {
                 <div className={styles.textbox}>
                     <div className={styles.profilepic}>
                         <img
-                            src={require('../images/partheev.jpg').default}
+                            src={
+                                process.env.PUBLIC_URL +
+                                '/images/profilepic.jpg'
+                            }
                             alt='profile pic'
                         />
                     </div>
@@ -18,7 +21,7 @@ const Intro = (props) => {
                         Hello, I'm <span>Partheev</span>.
                     </div>
                     <div className={styles.name}>Full stack web developer.</div>
-                    <a href='#about'>
+                    <a href='#navbar'>
                         <button className={styles.workbtn}>
                             View My Work
                             <span className={styles.arrow}>

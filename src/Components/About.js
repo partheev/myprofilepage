@@ -6,13 +6,13 @@ const About = () => {
         const cardDetails = [
             {
                 title: 'My Expertise',
-                image: require('../images/card/experience.png').default,
+                image: process.env.PUBLIC_URL + '/images/card/experience.png',
                 message:
                     'I can build frontend and backend application for large scale enterprises. Design and Performance of the app are my first priorities.',
             },
             {
                 title: 'Education',
-                image: require('../images/card/education.png').default,
+                image: process.env.PUBLIC_URL + '/images/card/education.png',
                 message:
                     'I am currently pursuing my B.Tech 2nd in Computer Science and Technology from G.Pulla Reddy Enginnering College.',
             },

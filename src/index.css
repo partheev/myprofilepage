@@ -41,6 +41,9 @@ body {
     --footerbackbtn: #fb1f79;
     --mediaBtnBg: #262f38;
     --secondaryHighlight: #fb1f79;
+    /* PORTFOLIO */
+    --projectbg: #141c3a;
+    --projectbtn: #7510f7;
 }
 
 #canvas {
@@ -49,6 +52,7 @@ body {
     height: 100vh;
     vertical-align: bottom;
 }
+
 * {
     /* outline: 1px solid red; */
 }

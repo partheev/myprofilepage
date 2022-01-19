@@ -3,6 +3,23 @@
     padding: 0.6rem 0;
     font-size: 1.5rem;
 }
+.title {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    margin-top: 2rem;
+}
+.title div:first-child {
+    font-size: 2rem;
+    color: var(--sectionTitle);
+    padding-bottom: 0.4rem;
+}
+.bottomborder {
+    width: 5rem;
+    height: 3px;
+    background-color: var(--sectionTitle);
+}
 .skill_list {
     display: flex;
     flex-direction: column;
