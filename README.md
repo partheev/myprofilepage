@@ -2,9 +2,7 @@
 
 ![img](/public/favicon.png)
 
-## Visit my site:
-
-`https://partheev.github.io/myprofilepage/`
+## Visit my site: https://partheev.github.io/myprofilepage/
 
 ## Tools used
 
