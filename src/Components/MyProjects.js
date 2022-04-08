@@ -123,6 +123,7 @@ const MyProjects = () => {
                           }
                         : {}
                 }
+                onClick={() => setIsHover(true)}
                 onMouseEnter={() => setIsHover(true)}
                 onMouseLeave={() => setIsHover(false)}
                 className={`${styles.project} ${

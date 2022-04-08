@@ -15,7 +15,7 @@ export const projectData = [
     },
     {
         name: 'Admin Dashboard Panel',
-        githubLink: 'https://github.com/partheev/ecom-authservice',
+        githubLink: 'https://github.com/partheev/localstore-adminfrontend',
         description: `This is specifically designed for Admin users/Bussiness owners of Online shopping website. Here the admin user add new products, modify existing products like changing prices, keeping offers, uploading new photos.
              `,
         techstack: ['TYPESCRIPT', 'NEXT.JS', 'TAILWIND CSS', 'MATERIAL UI'],

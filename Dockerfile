@@ -2,7 +2,7 @@ from node:16-alpine
 
 WORKDIR /app
 
-COPY build .
+ADD build ./build
 
 
 RUN npm i serve -g

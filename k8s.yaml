@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: profilepage-pod
+  labels:
+    app: profile-pod
+
+spec:
+  containers:
+    - name: myprofilepage
+      image: partheev8/profilepage:latest
+      ports:
+        - containerPort: 3000
+
