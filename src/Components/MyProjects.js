@@ -2,7 +2,7 @@ import { Dialog } from '@mui/material'
 import React, { useState } from 'react'
 import styles from './portfolio.module.css'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import { projectData } from '../projectsData'
+import { projectData } from '../data/projectsData'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
 
 const MyProjects = () => {

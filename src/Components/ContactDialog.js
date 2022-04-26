@@ -52,9 +52,11 @@ export const ContactDialog = ({ open, setopen }) => {
                         Note: There is some problem with backend api. Please use
                         below details to contact me. Thank you!
                     </Typography>
-                    <Typography gutterBottom>Name : Partheev</Typography>
                     <Typography gutterBottom>
                         Email : partheev8@gmail.com
+                    </Typography>
+                    <Typography gutterBottom>
+                        Phone : +91 7396378493
                     </Typography>
                 </DialogContent>
                 <DialogActions>

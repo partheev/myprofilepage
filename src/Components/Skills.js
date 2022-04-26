@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './skills.module.css'
-import { skillsData } from '../skillsData'
+import { skillsData } from '../data/skillsData'
 // import image from '../images/skillsData/javascript.png'
 const Skills = () => {
     let key = 1

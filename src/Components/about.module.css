@@ -27,7 +27,16 @@
     scroll-snap-align: start;
     margin-top: 5rem;
 }
-
+.bottomborder {
+    width: 5rem;
+    height: 3px;
+    background-color: var(--sectionTitle);
+}
+.title div:first-child {
+    font-size: 2rem;
+    color: var(--sectionTitle);
+    padding-bottom: 0.4rem;
+}
 .layout {
     display: flex;
     margin: 0 1rem;
@@ -65,13 +74,15 @@
     padding: 1rem 0;
     margin: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
     /* height: 10rem; */
     /* overflow: hidden; */
 }
 .card img {
     width: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 1rem;
     object-fit: contain;
 }

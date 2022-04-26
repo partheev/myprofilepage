@@ -1,30 +1,24 @@
-import { Paper } from '@mui/material'
+import { Avatar, Box, Paper, Typography } from '@mui/material'
 import React from 'react'
 import styles from './about.module.css'
+import Timeline from '@mui/lab/Timeline'
+import TimelineItem from '@mui/lab/TimelineItem'
+import TimelineSeparator from '@mui/lab/TimelineSeparator'
+import TimelineConnector from '@mui/lab/TimelineConnector'
+import TimelineContent from '@mui/lab/TimelineContent'
+import TimelineDot from '@mui/lab/TimelineDot'
+import { cardDetails, workTimelineData } from '../data/workTimelineData'
+import { TimelineOppositeContent } from '@mui/lab'
 const About = () => {
     const Cards = () => {
-        const cardDetails = [
-            {
-                title: 'My Expertise',
-                image: process.env.PUBLIC_URL + '/images/card/experience.png',
-                message:
-                    'I can build frontend and backend application for large scale enterprises. Design and Performance of the app are my first priorities.',
-            },
-            {
-                title: 'Education',
-                image: process.env.PUBLIC_URL + '/images/card/education.png',
-                message:
-                    'I am currently pursuing my B.Tech 2nd in Computer Science and Technology from G.Pulla Reddy Enginnering College.',
-            },
-        ]
         const Card = ({ heading, message, image }) => {
             return (
                 <div className={styles.card}>
                     <img src={image} alt={heading} />
-                    <div>
+                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                         <h2>{heading}</h2>
                         <p>{message}</p>
-                    </div>
+                    </Box>
                 </div>
             )
         }
@@ -46,38 +40,118 @@ const About = () => {
             </div>
         )
     }
+    const WorkExperienceTimeline = () => {
+        const CompanyContent = ({ companyName, role, logo }) => {
+            return (
+                <Box
+                    sx={{
+                        display: 'flex',
+                    }}
+                >
+                    <Avatar src={logo} sx={{ marginX: '1.5rem' }} />
+                    <Box sx={{ minWidth: '15rem' }}>
+                        <Typography variant='h6'>{companyName}</Typography>
+                        <Typography variant='body2' color={'GrayText'}>
+                            {role}
+                        </Typography>
+                    </Box>
+                </Box>
+            )
+        }
+        return (
+            <>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        columnGap: '2rem',
+                        marginTop: '2rem',
+                    }}
+                >
+                    <img
+                        alt='work experience'
+                        width={'50rem'}
+                        // height='30rem'
+                        src={
+                            process.env.PUBLIC_URL + '/images/card/workexp.png'
+                        }
+                    />
+                    <div className={styles.title}>
+                        <div data-aos-delay='300' data-aos='fade-left'>
+                            Work Experience
+                        </div>
+                        <div
+                            data-aos='fade-left'
+                            className={styles.bottomborder}
+                        ></div>
+                    </div>
+                </Box>
+                <Timeline>
+                    {workTimelineData.map((work, index) => {
+                        return (
+                            <TimelineItem key={index}>
+                                <TimelineOppositeContent color='text.secondary'>
+                                    March 22
+                                </TimelineOppositeContent>
+                                <TimelineSeparator>
+                                    <TimelineDot color='primary' />
+                                    <TimelineConnector />
+                                </TimelineSeparator>
+                                <TimelineContent>
+                                    <CompanyContent
+                                        logo={work.logo}
+                                        companyName={work.companyName}
+                                        role={work.role}
+                                    />
+                                </TimelineContent>
+                            </TimelineItem>
+                        )
+                    })}
+                </Timeline>
+            </>
+        )
+    }
     const AboutDetails = () => {
         return (
-            <div className={styles.aboutdetails}>
-                <div className={styles.title}>
-                    <span className={styles.titlesm} data-aos='fade-left'>
-                        LET ME INTRODUCE MYSELF
-                    </span>
-                    <span
-                        className={styles.titlebig}
-                        data-aos='fade-left'
-                        data-aos-delay='300'
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'start',
+                }}
+            >
+                <div className={styles.aboutdetails}>
+                    <div className={styles.title}>
+                        <span className={styles.titlesm} data-aos='fade-left'>
+                            LET ME INTRODUCE MYSELF
+                        </span>
+                        <span
+                            className={styles.titlebig}
+                            data-aos='fade-left'
+                            data-aos-delay='300'
+                        >
+                            About me
+                        </span>
+                    </div>
+                    <div className={styles.aboutpara}>
+                        <p>
+                            I'm enthusiastic software developer. My passion
+                            towards computer science made me full stack web
+                            developer. Continuously learning new and modern
+                            technologies to make better applications. Aspiring
+                            about WEB 3 and Blockchain Technology.
+                        </p>
+                    </div>
+                    <a
+                        href='./cv.pdf'
+                        target='_blank'
+                        download='cv.pdf'
+                        className={styles.cvbtn}
                     >
-                        About me
-                    </span>
+                        <button>DOWNLOAD CV</button>
+                    </a>
                 </div>
-                <div className={styles.aboutpara}>
-                    <p>
-                        I'm enthusiastic software developer. My passion towards
-                        computer science made me full stack web developer.
-                        Tasting latest technologies and improving knowledge on
-                        various domains in IT are my hobbies.{' '}
-                    </p>
-                </div>
-                <a
-                    href='./cv.pdf'
-                    target='_blank'
-                    download='cv.pdf'
-                    className={styles.cvbtn}
-                >
-                    <button>DOWNLOAD CV</button>
-                </a>
-            </div>
+                <WorkExperienceTimeline />
+            </Box>
         )
     }
     const AboutLayout = () => {
