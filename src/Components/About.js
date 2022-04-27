@@ -49,9 +49,16 @@ const About = () => {
                     }}
                 >
                     <Avatar src={logo} sx={{ marginX: '1.5rem' }} />
-                    <Box sx={{ minWidth: '15rem' }}>
-                        <Typography variant='h6'>{companyName}</Typography>
-                        <Typography variant='body2' color={'GrayText'}>
+                    <Box>
+                        <Typography
+                            sx={{ fontWeight: 'bold', fontSize: '0.9rem' }}
+                        >
+                            {companyName}
+                        </Typography>
+                        <Typography
+                            sx={{ fontSize: '0.8rem' }}
+                            color={'GrayText'}
+                        >
                             {role}
                         </Typography>
                     </Box>
@@ -70,7 +77,6 @@ const About = () => {
                     <img
                         alt='work experience'
                         width={'50rem'}
-                        // height='30rem'
                         src={
                             process.env.PUBLIC_URL + '/images/card/workexp.png'
                         }
@@ -85,11 +91,25 @@ const About = () => {
                         ></div>
                     </div>
                 </Box>
-                <Timeline>
+                <Timeline
+                    sx={
+                        {
+                            // border: '1px solid red',
+                            // width: '100%',
+                        }
+                    }
+                >
                     {workTimelineData.map((work, index) => {
                         return (
-                            <TimelineItem key={index}>
-                                <TimelineOppositeContent color='text.secondary'>
+                            <TimelineItem
+                                key={index}
+                                sx={{ cursor: 'pointer' }}
+                                onClick={() => window.open(work.link, '_blank')}
+                            >
+                                <TimelineOppositeContent
+                                    color='text.secondary'
+                                    sx={{ flex: '0' }}
+                                >
                                     March 22
                                 </TimelineOppositeContent>
                                 <TimelineSeparator>

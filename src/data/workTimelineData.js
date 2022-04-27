@@ -2,6 +2,7 @@ export const workTimelineData = [
     {
         companyName: 'TechPranee',
         role: 'Next.js Developer - Internship',
+        link: 'https://techpranee.com/',
         logo: process.env.PUBLIC_URL + '/images/companyLogos/techpranee.jpg',
     },
 ]
