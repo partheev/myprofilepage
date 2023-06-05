@@ -1,36 +1,35 @@
-import { Dialog } from '@mui/material'
-import React, { useState } from 'react'
-import styles from './portfolio.module.css'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import { projectData } from '../data/projectsData'
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos'
+import { Dialog } from '@mui/material';
+import React, { useState } from 'react';
+import styles from './portfolio.module.css';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { projectData } from '../data/projectsData';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const MyProjects = () => {
     const [project, setproject] = useState({
         open: false,
         projectDetails: null,
-    })
+    });
     const handleClose = () => {
         setproject({
             ...project,
             open: !project.open,
-        })
-    }
+        });
+    };
     const openProjectHandler = (projectidx) => {
-        const projectDetails = projectData[projectidx]
+        const projectDetails = projectData[projectidx];
         setproject({
             projectDetails,
             open: true,
-        })
-    }
-    const ProjectDialog = () => {
+        });
+    };
+    const ProjectDialog = ({ open }) => {
         return (
             <Dialog
-                open={project.open}
                 maxWidth='md'
-                fullWidth='true'
-                onClose={handleClose}
                 scroll='paper'
+                open={open}
+                onClose={handleClose}
             >
                 <div className={styles.projectlayout}>
                     <div className={styles.titlecontainer}>
@@ -65,7 +64,7 @@ const MyProjects = () => {
                         <h4>Tools Used:</h4>
                         <div className={styles.techstack}>
                             {project.projectDetails.techstack.map((e, idx) => {
-                                return <li key={idx}>{e}</li>
+                                return <li key={idx}>{e}</li>;
                             })}
                         </div>
                         <h4>Features:</h4>
@@ -73,7 +72,7 @@ const MyProjects = () => {
                             <ol>
                                 {project.projectDetails.features.map(
                                     (e, idx) => {
-                                        return <li key={idx}>{e}</li>
+                                        return <li key={idx}>{e}</li>;
                                     }
                                 )}
                             </ol>
@@ -96,7 +95,7 @@ const MyProjects = () => {
                                                     }
                                                     src={e}
                                                 />
-                                            )
+                                            );
                                         }
                                     )}
                                 </div>
@@ -105,10 +104,10 @@ const MyProjects = () => {
                     </div>
                 </div>
             </Dialog>
-        )
-    }
+        );
+    };
     const Project = ({ projectIdx, projectDetails }) => {
-        const [isHover, setIsHover] = useState(false)
+        const [isHover, setIsHover] = useState(false);
 
         return (
             <div
@@ -148,30 +147,35 @@ const MyProjects = () => {
                     </>
                 )}
             </div>
-        )
-    }
+        );
+    };
     return (
-        <div className={`${styles.myprojectcon} container`}>
-            <div className={styles.title}>
-                <div data-aos-delay='300' data-aos='fade-left'>
-                    My Projects
+        <>
+            <div className={`${styles.myprojectcon} container`}>
+                <div className={styles.title}>
+                    <div data-aos-delay='300' data-aos='fade-left'>
+                        My Projects
+                    </div>
+                    <div
+                        data-aos='fade-left'
+                        className={styles.bottomborder}
+                    ></div>
                 </div>
-                <div data-aos='fade-left' className={styles.bottomborder}></div>
+                <div className={styles.projectitems}>
+                    {projectData.map((project, idx) => {
+                        return (
+                            <Project
+                                key={idx}
+                                projectIdx={idx}
+                                projectDetails={project}
+                            />
+                        );
+                    })}
+                </div>
             </div>
-            <div className={styles.projectitems}>
-                {projectData.map((project, idx) => {
-                    return (
-                        <Project
-                            key={idx}
-                            projectIdx={idx}
-                            projectDetails={project}
-                        />
-                    )
-                })}
-            </div>
-            {project.open && <ProjectDialog />}
-        </div>
-    )
-}
+            {project.open && <ProjectDialog open={project.open} />}
+        </>
+    );
+};
 
-export default MyProjects
+export default MyProjects;

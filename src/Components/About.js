@@ -1,14 +1,15 @@
-import { Avatar, Box, Paper, Typography } from '@mui/material'
-import React from 'react'
-import styles from './about.module.css'
-import Timeline from '@mui/lab/Timeline'
-import TimelineItem from '@mui/lab/TimelineItem'
-import TimelineSeparator from '@mui/lab/TimelineSeparator'
-import TimelineConnector from '@mui/lab/TimelineConnector'
-import TimelineContent from '@mui/lab/TimelineContent'
-import TimelineDot from '@mui/lab/TimelineDot'
-import { cardDetails, workTimelineData } from '../data/workTimelineData'
-import { TimelineOppositeContent } from '@mui/lab'
+import { Avatar, Box, Paper, Typography } from '@mui/material';
+import React from 'react';
+import styles from './about.module.css';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import { workTimelineData } from '../data/workTimelineData';
+import { TimelineOppositeContent } from '@mui/lab';
+import { ABOUT_ME_DESCRIPTION, CARD_DETAILS } from '../data/infoData';
 const About = () => {
     const Cards = () => {
         const Card = ({ heading, message, image }) => {
@@ -20,11 +21,11 @@ const About = () => {
                         <p>{message}</p>
                     </Box>
                 </div>
-            )
-        }
+            );
+        };
         return (
             <div>
-                {cardDetails.map((e) => {
+                {CARD_DETAILS.map((e) => {
                     return (
                         <div key={e.title} data-aos='flip-down'>
                             <Paper elevation={3}>
@@ -35,20 +36,21 @@ const About = () => {
                                 />
                             </Paper>
                         </div>
-                    )
+                    );
                 })}
             </div>
-        )
-    }
+        );
+    };
     const WorkExperienceTimeline = () => {
         const CompanyContent = ({ companyName, role, logo }) => {
             return (
                 <Box
                     sx={{
                         display: 'flex',
+                        width: '10rem',
                     }}
                 >
-                    <Avatar src={logo} sx={{ marginX: '1.5rem' }} />
+                    <Avatar src={logo} sx={{ marginX: '1rem' }} />
                     <Box>
                         <Typography
                             sx={{ fontWeight: 'bold', fontSize: '0.9rem' }}
@@ -63,8 +65,8 @@ const About = () => {
                         </Typography>
                     </Box>
                 </Box>
-            )
-        }
+            );
+        };
         return (
             <>
                 <Box
@@ -91,14 +93,7 @@ const About = () => {
                         ></div>
                     </div>
                 </Box>
-                <Timeline
-                    sx={
-                        {
-                            // border: '1px solid red',
-                            // width: '100%',
-                        }
-                    }
-                >
+                <Timeline sx={{ width: '100%' }}>
                     {workTimelineData.map((work, index) => {
                         return (
                             <TimelineItem
@@ -108,9 +103,9 @@ const About = () => {
                             >
                                 <TimelineOppositeContent
                                     color='text.secondary'
-                                    sx={{ flex: '0' }}
+                                    sx={{ width: '5rem' }}
                                 >
-                                    March 22
+                                    {work.dates}
                                 </TimelineOppositeContent>
                                 <TimelineSeparator>
                                     <TimelineDot color='primary' />
@@ -124,12 +119,12 @@ const About = () => {
                                     />
                                 </TimelineContent>
                             </TimelineItem>
-                        )
+                        );
                     })}
                 </Timeline>
             </>
-        )
-    }
+        );
+    };
     const AboutDetails = () => {
         return (
             <Box
@@ -141,9 +136,6 @@ const About = () => {
             >
                 <div className={styles.aboutdetails}>
                     <div className={styles.title}>
-                        <span className={styles.titlesm} data-aos='fade-left'>
-                            LET ME INTRODUCE MYSELF
-                        </span>
                         <span
                             className={styles.titlebig}
                             data-aos='fade-left'
@@ -153,13 +145,7 @@ const About = () => {
                         </span>
                     </div>
                     <div className={styles.aboutpara}>
-                        <p>
-                            I'm enthusiastic software developer. My passion
-                            towards computer science made me full stack web
-                            developer. Continuously learning new and modern
-                            technologies to make better applications. Aspiring
-                            about WEB 3 and Blockchain Technology.
-                        </p>
+                        <p>{ABOUT_ME_DESCRIPTION} </p>
                     </div>
                     <a
                         href='./cv.pdf'
@@ -167,28 +153,31 @@ const About = () => {
                         download='cv.pdf'
                         className={styles.cvbtn}
                     >
-                        <button>DOWNLOAD CV</button>
+                        <button>DOWNLOAD RESUME</button>
                     </a>
                 </div>
                 <WorkExperienceTimeline />
             </Box>
-        )
-    }
+        );
+    };
     const AboutLayout = () => {
         return (
             <div className={styles.layout}>
                 <Cards />
                 <AboutDetails />
             </div>
-        )
-    }
+        );
+    };
     return (
         <section id='about' className={styles.about}>
             <div className='container'>
+                <span className={styles.titlesm} data-aos='fade-left'>
+                    LET ME INTRODUCE MYSELF
+                </span>
                 <AboutLayout />
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default About
+export default About;

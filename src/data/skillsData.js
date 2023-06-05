@@ -64,29 +64,41 @@ export const skillsData = [
                 image:
                     process.env.PUBLIC_URL + '/images/skillsData/mongoose.png',
             },
+            {
+                title: 'Flask',
+                image: process.env.PUBLIC_URL + '/images/skillsData/flask.png',
+            },
             // {
             //   title: 'FastAPI',
             //   image:  ../images/skillsData/fastapi.png',
             // },
         ],
     },
-    // {
-    //   title: 'Mobile App Development',
-    //   techStack: [
-    //     {
-    //       title: 'Dart',
-    //       image:  ../images/skillsData/dart.png',
-    //     },
-    //     {
-    //       title: 'Flutter',
-    //       image:  ../images/skillsData/flutter.png',
-    //     },
-    //     {
-    //       title: 'Bloc (Dart lib.)',
-    //       image:  ../images/skillsData/bloc.png',
-    //     },
-    //   ],
-    // },
+    {
+        title: 'Data Science and Machine Learning',
+        techStack: [
+            {
+                title: 'Python',
+                image: ' ../images/skillsData/python.png',
+            },
+            {
+                title: 'Jupyter Notebook',
+                image: '../images/skillsData/jupyter-notebook.png',
+            },
+            {
+                title: 'Numpy',
+                image: '../images/skillsData/numpy.png',
+            },
+            {
+                title: 'Pandas',
+                image: '../images/skillsData/pandas.png',
+            },
+            {
+                title: 'Scikit Learn',
+                image: '../images/skillsData/scikitlearn.png',
+            },
+        ],
+    },
     {
         title: 'DevOps',
         techStack: [
@@ -144,4 +156,4 @@ export const skillsData = [
     //           }
     //       ]
     // }
-]
+];

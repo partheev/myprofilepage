@@ -1,23 +1,17 @@
 export const workTimelineData = [
     {
         companyName: 'TechPranee',
-        role: 'Next.js Developer - Internship',
+        role: 'Full Stack Developer - Internship',
         link: 'https://techpranee.com/',
         logo: process.env.PUBLIC_URL + '/images/companyLogos/techpranee.jpg',
+        dates: 'March - Sep 2022',
     },
-]
 
-export const cardDetails = [
     {
-        title: 'My Expertise',
-        image: process.env.PUBLIC_URL + '/images/card/experience.png',
-        message:
-            'Deep understanding of Node.js and JavaScript. Familier with Reactjs, Nextjs frontend libraries and integration of APIS.',
+        companyName: 'Intugine Technologies',
+        role: 'Frontend Developer - Internship',
+        link: 'https://intugine.com/',
+        logo: process.env.PUBLIC_URL + '/images/companyLogos/intugine.jpeg',
+        dates: 'July - Dec 2022',
     },
-    {
-        title: 'Education',
-        image: process.env.PUBLIC_URL + '/images/card/education.png',
-        message:
-            'Pursuing B.Tech in Computer Science degree at G.Pulla Reddy Engineering College, Kurnool.',
-    },
-]
+];

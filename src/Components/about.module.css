@@ -13,8 +13,9 @@
 }
 .titlesm {
     color: var(--sectionTitle);
-
-    font-size: 1rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 .bottomborder {
     width: 4rem;
